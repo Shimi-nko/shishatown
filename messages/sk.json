@@ -1,0 +1,139 @@
+{
+  "A11y": {
+    "skipToContent": "Preskočiť na obsah"
+  },
+  "Languages": {
+    "sk": "Slovensky",
+    "en": "Anglicky",
+    "de": "Nemecky",
+    "ru": "Rusky",
+    "uk": "Ukrajinsky"
+  },
+  "Metadata": {
+    "title": "Shisha Town Bratislava — Najlepšia shisha v Bratislave",
+    "description": "Prémiové vodné fajky, kvalitné tabaky a underground atmosféra v centre Bratislavy. Rezervujte si stôl.",
+    "keywords": "shisha, vodná fajka, Bratislava, lounge, tabak, hookah, fajčiareň, Mickiewiczova",
+    "siteName": "Shisha Town Bratislava",
+    "ogLocale": "sk_SK"
+  },
+  "Menu": {
+    "pageTitle": "Cenník",
+    "pageSubtitle": "Vyber si shishu, niečo pod zub a poriadny drink.",
+    "categories": {
+      "shisha": {
+        "title": "Vodné fajky",
+        "items": {
+          "house": { "name": "Domáci mix", "description": "Naša signature kombinácia" },
+          "premium": { "name": "Prémiový tabak", "description": "Top značky, vyladený setup" },
+          "experimental": { "name": "Experiment", "description": "Limitky a špeciálne mixy" },
+          "coalChange": { "name": "Výmena uhlíkov", "description": "Predĺženie sedenia" }
+        }
+      },
+      "coldDrinks": {
+        "title": "Studené nápoje",
+        "items": {
+          "water": { "name": "Voda 0,5 l" },
+          "cola": { "name": "Coca-Cola 0,33 l" },
+          "fanta": { "name": "Fanta 0,33 l" },
+          "redBull": { "name": "Red Bull 0,25 l" },
+          "juice": { "name": "Džús 0,3 l" }
+        }
+      },
+      "hotDrinks": {
+        "title": "Horúce nápoje",
+        "items": {
+          "espresso": { "name": "Espresso" },
+          "cappuccino": { "name": "Cappuccino" },
+          "tea": { "name": "Čaj" },
+          "hotChocolate": { "name": "Horúca čokoláda" }
+        }
+      },
+      "snacks": {
+        "title": "Niečo pod zub",
+        "items": {
+          "chips": { "name": "Čipsy" },
+          "nuts": { "name": "Oriešky" },
+          "olives": { "name": "Olivy" }
+        }
+      }
+    },
+    "currency": "EUR"
+  },
+  "Landing": {
+    "nav": {
+      "about": "O nás",
+      "menu": "Cenník",
+      "gallery": "Galéria",
+      "contact": "Kontakt",
+      "cta": "Rezervovať stôl"
+    },
+    "hero": {
+      "title": "Shisha Town Bratislava",
+      "subtitle": "Najlepšia shisha v Bratislave",
+      "description": "Sme tím mladých ľudí, ktorých vodné fajky chytili ako koníček. Ponúkame kvalitné tabakové príchute, viacero druhov shíš, nápoje a niečo pod zub. Priateľská a pohodová atmosféra zaručená.",
+      "cta": "Rezervovať",
+      "secondaryCta": "Pozrieť cenník"
+    },
+    "hours": {
+      "title": "Otváracie hodiny",
+      "weekdays": "Pondelok – Sobota",
+      "weekdaysTime": "15:00 – 23:00",
+      "sunday": "Nedeľa",
+      "sundayTime": "17:00 – 23:00"
+    },
+    "services": {
+      "tag": "Menu",
+      "title": "Naše shishy",
+      "subtitle": "Z menu vyberáme rôzne kategórie, názvy a odporúčania od staffu.",
+      "learnMore": "Viac",
+      "items": {
+        "house": {
+          "title": "Domáce mixy",
+          "description": "Naše vlastné kombinácie, ktoré inde nedostaneš.",
+          "list": ["Mystery Flow", "Dark Mind", "Silent Smoke", "After Hours"]
+        },
+        "premium": {
+          "title": "Prémiové sedenie",
+          "description": "Vybrané tabaky a top mixy pre maximálny zážitok.",
+          "list": [
+            "Black Label",
+            "Deep Session",
+            "Cloud Control",
+            "Smooth Operator"
+          ]
+        },
+        "experimental": {
+          "title": "Experimentálne",
+          "description": "Limitky a špeciálne mixy. Opýtaj sa na obľúbené.",
+          "list": ["Unknown Batch", "Off Menu", "Staff Only", "Secret Mix"]
+        }
+      },
+      "features": {
+        "quality": {
+          "title": "Top kvalita",
+          "description": "Poctivý setup a tabaky."
+        },
+        "vibe": {
+          "title": "Underground atmosféra",
+          "description": "Nie hlučný, ale autentický."
+        },
+        "limited": {
+          "title": "Obmedzená kapacita",
+          "description": "Malý spot — hodnotné rezervácie."
+        },
+        "reservation": {
+          "title": "Rezervácia",
+          "description": "Stôl sa dá zarezervovať vopred."
+        }
+      }
+    },
+    "footer": {
+      "contactTitle": "Kontakt",
+      "hoursTitle": "Otváracie hodiny",
+      "address": "Mickiewiczova 5, 811 07 Bratislava",
+      "phone": "+421 948 455 534",
+      "email": "info@shishatown.sk",
+      "rights": "© 2026 Shisha Town. Všetky práva vyhradené."
+    }
+  }
+}

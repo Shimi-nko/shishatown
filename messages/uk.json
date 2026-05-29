@@ -1,0 +1,139 @@
+{
+  "A11y": {
+    "skipToContent": "Перейти до вмісту"
+  },
+  "Languages": {
+    "sk": "Словацька",
+    "en": "Англійська",
+    "de": "Німецька",
+    "ru": "Російська",
+    "uk": "Українська"
+  },
+  "Metadata": {
+    "title": "Shisha Town Bratislava — Найкраща кальянна у Братиславі",
+    "description": "Преміальні кальяни, якісний тютюн і андеграунд-атмосфера в центрі Братислави. Бронюйте столик.",
+    "keywords": "кальян, тютюн, Братислава, лаундж, hookah, shisha, Mickiewiczova",
+    "siteName": "Shisha Town Bratislava",
+    "ogLocale": "uk_UA"
+  },
+  "Menu": {
+    "pageTitle": "Меню",
+    "pageSubtitle": "Обирай кальян, снек і добрий напій.",
+    "categories": {
+      "shisha": {
+        "title": "Кальяни",
+        "items": {
+          "house": { "name": "Фірмовий мікс", "description": "Наш авторський мікс" },
+          "premium": { "name": "Преміум тютюн", "description": "Топ-бренди, виважений сетап" },
+          "experimental": { "name": "Експеримент", "description": "Лімітки та спецмікси" },
+          "coalChange": { "name": "Заміна вугілля", "description": "Подовження сесії" }
+        }
+      },
+      "coldDrinks": {
+        "title": "Холодні напої",
+        "items": {
+          "water": { "name": "Вода 0,5 л" },
+          "cola": { "name": "Coca-Cola 0,33 л" },
+          "fanta": { "name": "Fanta 0,33 л" },
+          "redBull": { "name": "Red Bull 0,25 л" },
+          "juice": { "name": "Сік 0,3 л" }
+        }
+      },
+      "hotDrinks": {
+        "title": "Гарячі напої",
+        "items": {
+          "espresso": { "name": "Еспресо" },
+          "cappuccino": { "name": "Капучино" },
+          "tea": { "name": "Чай" },
+          "hotChocolate": { "name": "Гарячий шоколад" }
+        }
+      },
+      "snacks": {
+        "title": "Закуски",
+        "items": {
+          "chips": { "name": "Чіпси" },
+          "nuts": { "name": "Горішки" },
+          "olives": { "name": "Оливки" }
+        }
+      }
+    },
+    "currency": "EUR"
+  },
+  "Landing": {
+    "nav": {
+      "about": "Про нас",
+      "menu": "Меню",
+      "gallery": "Галерея",
+      "contact": "Контакти",
+      "cta": "Забронювати столик"
+    },
+    "hero": {
+      "title": "Shisha Town Bratislava",
+      "subtitle": "Найкраща кальянна у Братиславі",
+      "description": "Ми — команда молодих хлопців, які перетворили хобі на лаундж. Якісний тютюн, різні кальяни, напої та снеки — все в дружній розслабленій атмосфері.",
+      "cta": "Забронювати",
+      "secondaryCta": "Переглянути меню"
+    },
+    "hours": {
+      "title": "Години роботи",
+      "weekdays": "Понеділок – Субота",
+      "weekdaysTime": "15:00 – 23:00",
+      "sunday": "Неділя",
+      "sundayTime": "17:00 – 23:00"
+    },
+    "services": {
+      "tag": "Меню",
+      "title": "Наші кальяни",
+      "subtitle": "Обираємо за категоріями, міксами та рекомендаціями персоналу.",
+      "learnMore": "Детальніше",
+      "items": {
+        "house": {
+          "title": "Домашні мікси",
+          "description": "Наші авторські мікси, яких більше ніде немає.",
+          "list": ["Mystery Flow", "Dark Mind", "Silent Smoke", "After Hours"]
+        },
+        "premium": {
+          "title": "Преміум сесія",
+          "description": "Відібрані тютюни та топ-мікси для максимального досвіду.",
+          "list": [
+            "Black Label",
+            "Deep Session",
+            "Cloud Control",
+            "Smooth Operator"
+          ]
+        },
+        "experimental": {
+          "title": "Експеримент",
+          "description": "Лімітки та спецмікси. Запитуй про улюблені.",
+          "list": ["Unknown Batch", "Off Menu", "Staff Only", "Secret Mix"]
+        }
+      },
+      "features": {
+        "quality": {
+          "title": "Топ якість",
+          "description": "Чесний сетап і тютюн."
+        },
+        "vibe": {
+          "title": "Андеграунд атмосфера",
+          "description": "Не гучно — автентично."
+        },
+        "limited": {
+          "title": "Мало місць",
+          "description": "Маленький спот — бронюй заздалегідь."
+        },
+        "reservation": {
+          "title": "Бронь",
+          "description": "Заброньовуй столик заздалегідь."
+        }
+      }
+    },
+    "footer": {
+      "contactTitle": "Контакти",
+      "hoursTitle": "Години роботи",
+      "address": "Mickiewiczova 5, 811 07 Bratislava",
+      "phone": "+421 948 455 534",
+      "email": "info@shishatown.sk",
+      "rights": "© 2026 Shisha Town. Усі права захищено."
+    }
+  }
+}

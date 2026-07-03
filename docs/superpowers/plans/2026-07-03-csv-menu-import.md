@@ -362,7 +362,7 @@ shisha,addons,dyeInVase,1.50,,,x,
 ```
 
 Also check the row count matches the item count:
-`tail -n +2 menu/menu.csv | wc -l` should equal the number of `{ id:` item lines in `src/data/menu.ts` (`grep -c '{ id: "' src/data/menu.ts` minus category/subcategory object lines — simplest: `grep -c 'price:' src/data/menu.ts`).
+`tail -n +2 menu/menu.csv | wc -l` should equal `grep -cE 'price: ([0-9]|\{)' src/data/menu.ts` (plain `grep -c 'price:'` over-counts by one — it also matches the `price: MenuItemPrice;` type field).
 
 - [ ] **Step 4: Commit**
 

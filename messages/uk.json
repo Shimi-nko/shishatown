@@ -19,45 +19,441 @@
   "Menu": {
     "pageTitle": "Меню",
     "pageSubtitle": "Обирай кальян, снек і добрий напій.",
+    "currency": "EUR",
     "categories": {
       "shisha": {
         "title": "Кальяни",
+        "subcategories": {
+          "tiers": {
+            "title": "Типи кальянів"
+          },
+          "addons": {
+            "title": "Доповнення"
+          }
+        },
         "items": {
-          "house": { "name": "Фірмовий мікс", "description": "Наш авторський мікс" },
-          "premium": { "name": "Преміум тютюн", "description": "Топ-бренди, виважений сетап" },
-          "experimental": { "name": "Експеримент", "description": "Лімітки та спецмікси" },
-          "coalChange": { "name": "Заміна вугілля", "description": "Подовження сесії" }
+          "standard": {
+            "name": "Standard",
+            "description": "Світлий тютюн · Чаша KALOUD"
+          },
+          "exclusive": {
+            "name": "Exclusive",
+            "description": "Темний тютюн · Чаша KALOUD або N.A.R."
+          },
+          "iceInVase": {
+            "name": "Лід у вазу",
+            "description": "М'якше в горлі, вища температура"
+          },
+          "dyeInVase": {
+            "name": "Барвник у вазу"
+          },
+          "fruitInVase": {
+            "name": "Свіжі фрукти у вазу"
+          }
         }
       },
-      "coldDrinks": {
-        "title": "Холодні напої",
+      "alcohol": {
+        "title": "Алкоголь",
+        "subcategories": {
+          "shots": {
+            "title": "Шоти (0,04Л)"
+          },
+          "cocktails": {
+            "title": "Коктейлі (0,2Л)"
+          },
+          "prosecco": {
+            "title": "Просекко & Шампанське"
+          },
+          "beer": {
+            "title": "Пиво"
+          },
+          "wine": {
+            "title": "Вино (0,1Л)"
+          }
+        },
         "items": {
-          "water": { "name": "Вода 0,5 л" },
-          "cola": { "name": "Coca-Cola 0,33 л" },
-          "fanta": { "name": "Fanta 0,33 л" },
-          "redBull": { "name": "Red Bull 0,25 л" },
-          "juice": { "name": "Сік 0,3 л" }
-        }
-      },
-      "hotDrinks": {
-        "title": "Гарячі напої",
-        "items": {
-          "espresso": { "name": "Еспресо" },
-          "cappuccino": { "name": "Капучино" },
-          "tea": { "name": "Чай" },
-          "hotChocolate": { "name": "Гарячий шоколад" }
+          "russianStandardGold": {
+            "name": "Russian Standard GOLD"
+          },
+          "jackDaniels": {
+            "name": "Jack Daniel's"
+          },
+          "jackDanielsSingleBarrel": {
+            "name": "Jack Daniel's Single Barrel 45%"
+          },
+          "beefeater": {
+            "name": "Beefeater"
+          },
+          "diplomatico": {
+            "name": "Diplomático Reserva Exclusiva 12 y.o."
+          },
+          "jagermeister": {
+            "name": "Jägermeister"
+          },
+          "hennessyVS": {
+            "name": "Hennessy V.S."
+          },
+          "olmecaPlata": {
+            "name": "Olmeca Altos Plata Silver 38%"
+          },
+          "olmecaReposado": {
+            "name": "Olmeca Altos Reposado Gold 38%"
+          },
+          "havanaClub": {
+            "name": "Havana Club 3y White"
+          },
+          "baileys": {
+            "name": "Baileys"
+          },
+          "martiniBianco": {
+            "name": "Martini Bianco"
+          },
+          "ginTonic": {
+            "name": "Джин Тонік"
+          },
+          "cubaLibre": {
+            "name": "Куба Лібре"
+          },
+          "mojito": {
+            "name": "Мохіто"
+          },
+          "strawberryMojito": {
+            "name": "Полунична Мохіто"
+          },
+          "luxuryMojito": {
+            "name": "Luxury Мохіто"
+          },
+          "tequilaSunrise": {
+            "name": "Текіла Санрайз"
+          },
+          "aperolSpritz": {
+            "name": "Апероль Шпріц"
+          },
+          "elderflowerSpritz": {
+            "name": "Бузиновий Шпріц"
+          },
+          "mimosa": {
+            "name": "Мімоза"
+          },
+          "russianStandardRedBull": {
+            "name": "Russian Standard GOLD + Red Bull"
+          },
+          "proseccoDOC": {
+            "name": "Prosecco DOC Frizzante (0,20Л)"
+          },
+          "laurentPerrier": {
+            "name": "Laurent Perrier La Cuvée Brut (0,75Л)"
+          },
+          "pilsnerUrquell": {
+            "name": "Pilsner Urquell 12% (0,3Л / 0,5Л)"
+          },
+          "wywar": {
+            "name": "Wywar 10% Jozef II. (0,4Л)"
+          },
+          "radlerNonAlcoholic": {
+            "name": "Радлер безалкогольний (0,4Л)"
+          },
+          "wine": {
+            "name": "Вино дня",
+            "description": "Запитайте у персоналу"
+          },
+          "mulledWine": {
+            "name": "Глінтвейн",
+            "description": "Лише в зимовий сезон"
+          }
         }
       },
       "snacks": {
-        "title": "Закуски",
+        "title": "Їжа & Снеки",
+        "subcategories": {
+          "food": {
+            "title": "Снеки"
+          },
+          "desserts": {
+            "title": "Десерти"
+          }
+        },
         "items": {
-          "chips": { "name": "Чіпси" },
-          "nuts": { "name": "Горішки" },
-          "olives": { "name": "Оливки" }
+          "panini": {
+            "name": "Домашній Паніні 170г",
+            "description": "Вершкове масло, бекон, моцарела, пармезан, руккола, солодкий чилі соус"
+          },
+          "popcorn": {
+            "name": "Попкорн 80г"
+          },
+          "nachos": {
+            "name": "Начос 80г",
+            "description": "З солодким чилі соусом"
+          },
+          "cheeseSauce": {
+            "name": "Сирний соус"
+          },
+          "peanutPuffs": {
+            "name": "Арахісові Чіпси 60г"
+          },
+          "saltedSticks": {
+            "name": "Солоні Палички 45г"
+          },
+          "hotChocolate": {
+            "name": "Гаряча шоколадка",
+            "description": "Справжній бельгійський шоколад"
+          },
+          "granko": {
+            "name": "Granko",
+            "description": "Гаряче або холодне"
+          }
+        }
+      },
+      "lemonades": {
+        "title": "Напої",
+        "subcategories": {
+          "homemade": {
+            "title": "Домашні Лимонади (0,5Л / 1,0Л)"
+          },
+          "bottled": {
+            "title": "Напої у пляшках"
+          },
+          "draft": {
+            "title": "Напої на розлив"
+          }
+        },
+        "items": {
+          "lemonade": {
+            "name": "Лимонад"
+          },
+          "elderflowerLemon": {
+            "name": "Бузина & Лимон"
+          },
+          "blackcurrantLemon": {
+            "name": "Чорна смородина & Лимон"
+          },
+          "raspberryLemon": {
+            "name": "Малина & Лимон"
+          },
+          "cherryLemon": {
+            "name": "Вишня & Лимон"
+          },
+          "grapefruitLemon": {
+            "name": "Грейпфрут & Лимон"
+          },
+          "strawberryLemon": {
+            "name": "Полуниця & Лимон"
+          },
+          "kiwiLemon": {
+            "name": "Ківі & Лимон"
+          },
+          "mangoLemon": {
+            "name": "Манго & Лимон"
+          },
+          "mojitoStyle": {
+            "name": "У стилі Мохіто"
+          },
+          "cocaCola": {
+            "name": "Coca-Cola (0,33Л)"
+          },
+          "cocaColaZero": {
+            "name": "Coca-Cola Zero (0,33Л)"
+          },
+          "romerquelle": {
+            "name": "Römerquelle газована (0,33Л)"
+          },
+          "orangeJuice": {
+            "name": "Апельсиновий сік 100% (0,25Л)"
+          },
+          "kinleyTonic": {
+            "name": "Kinley Tonic Water (0,25Л)"
+          },
+          "kinleyBitterRose": {
+            "name": "Kinley Bitter Rose (0,25Л)"
+          },
+          "kinleyGingerAle": {
+            "name": "Kinley Ginger Ale (0,25Л)"
+          },
+          "redBull": {
+            "name": "Red Bull (0,33Л)"
+          },
+          "kofola": {
+            "name": "Kofola (0,3Л / 0,5Л)"
+          },
+          "sodaWater": {
+            "name": "Сода / Вода (0,5Л / 1,0Л)"
+          }
+        }
+      },
+      "tea": {
+        "title": "Чай",
+        "subcategories": {
+          "black": {
+            "title": "Чорний чай"
+          },
+          "green": {
+            "title": "Зелений чай"
+          },
+          "fruit": {
+            "title": "Фруктовий чай"
+          },
+          "fresh": {
+            "title": "Свіжий чай"
+          },
+          "mate": {
+            "title": "Мате"
+          },
+          "white": {
+            "title": "Білий чай"
+          },
+          "herbal": {
+            "title": "Трав'яний чай"
+          },
+          "rooibos": {
+            "title": "Ройбуш"
+          },
+          "rooibosMilk": {
+            "title": "Ройбуш з молоком"
+          },
+          "extras": {
+            "title": "Добавки до чаю"
+          }
+        },
+        "items": {
+          "touaregBlack": {
+            "name": "Touareg Black"
+          },
+          "rize": {
+            "name": "Rize"
+          },
+          "touareg": {
+            "name": "Touareg"
+          },
+          "chinaJasmin": {
+            "name": "China Jasmin"
+          },
+          "diamondTea": {
+            "name": "Діамантовий чай"
+          },
+          "appleCinnamon": {
+            "name": "Яблуко & Кориця"
+          },
+          "strawberriesChampagne": {
+            "name": "Полуниця в шампанському"
+          },
+          "kamasutra": {
+            "name": "Камасутра"
+          },
+          "freshGingerTea": {
+            "name": "Свіжий імбирний чай"
+          },
+          "freshMintTea": {
+            "name": "Свіжий м'ятний чай"
+          },
+          "mateGreen": {
+            "name": "Maté Green"
+          },
+          "mateIQ": {
+            "name": "Maté IQ"
+          },
+          "paiMuTan": {
+            "name": "Pai Mu Tan"
+          },
+          "hibiscus": {
+            "name": "Каркаде (Гібіскус)"
+          },
+          "chamomile": {
+            "name": "Ромашка"
+          },
+          "teaOfPharaohs": {
+            "name": "Чай Фараонів"
+          },
+          "tantra": {
+            "name": "Тантра"
+          },
+          "hercules": {
+            "name": "Геркулес"
+          },
+          "kingOfMonkeys": {
+            "name": "Цар Мавп з молоком"
+          },
+          "littleYeti": {
+            "name": "Малий Єті з молоком"
+          },
+          "tantraMilk": {
+            "name": "Тантра з молоком"
+          },
+          "honey": {
+            "name": "Мед"
+          },
+          "ginger": {
+            "name": "Імбир"
+          },
+          "lactoseFreeMilk": {
+            "name": "Безлактозне молоко (0,5Л)"
+          }
+        }
+      },
+      "coffee": {
+        "title": "Кава",
+        "subcategories": {
+          "hot": {
+            "title": "Гаряча кава"
+          },
+          "iced": {
+            "title": "Холодна кава"
+          },
+          "extras": {
+            "title": "Добавки"
+          }
+        },
+        "items": {
+          "espresso": {
+            "name": "Еспресо"
+          },
+          "espressoDoppio": {
+            "name": "Еспресо Доппіо"
+          },
+          "cappuccino": {
+            "name": "Капучино"
+          },
+          "cappuccinoCaramel": {
+            "name": "Капучино Карамель"
+          },
+          "cappuccinoChocolate": {
+            "name": "Капучино Шоколад"
+          },
+          "latteMacchiato": {
+            "name": "Лате Макіато"
+          },
+          "latteMacchiatoCaramel": {
+            "name": "Лате Макіато Карамель"
+          },
+          "latteMacchiatoChocolate": {
+            "name": "Лате Макіато Шоколад"
+          },
+          "icedCoffee": {
+            "name": "Холодна кава"
+          },
+          "icedCappuccino": {
+            "name": "Холодний капучино"
+          },
+          "espressoTonic": {
+            "name": "Espresso Tonic"
+          },
+          "raspberryEspressoTonic": {
+            "name": "Raspberry Espresso Tonic"
+          },
+          "honey": {
+            "name": "Мед"
+          },
+          "maresiMilk": {
+            "name": "Молоко Maresi"
+          },
+          "topping": {
+            "name": "Топінг"
+          },
+          "whippedCream": {
+            "name": "Збиті вершки"
+          }
         }
       }
-    },
-    "currency": "EUR"
+    }
   },
   "Landing": {
     "nav": {
@@ -90,7 +486,12 @@
         "house": {
           "title": "Домашні мікси",
           "description": "Наші авторські мікси, яких більше ніде немає.",
-          "list": ["Mystery Flow", "Dark Mind", "Silent Smoke", "After Hours"]
+          "list": [
+            "Mystery Flow",
+            "Dark Mind",
+            "Silent Smoke",
+            "After Hours"
+          ]
         },
         "premium": {
           "title": "Преміум сесія",
@@ -105,7 +506,12 @@
         "experimental": {
           "title": "Експеримент",
           "description": "Лімітки та спецмікси. Запитуй про улюблені.",
-          "list": ["Unknown Batch", "Off Menu", "Staff Only", "Secret Mix"]
+          "list": [
+            "Unknown Batch",
+            "Off Menu",
+            "Staff Only",
+            "Secret Mix"
+          ]
         }
       },
       "features": {

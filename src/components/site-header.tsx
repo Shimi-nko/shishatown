@@ -52,7 +52,7 @@ function MenuDropdown() {
 					</button>
 				}
 			/>
-			<DropdownMenuContent align="start" className="min-w-[12rem]">
+			<DropdownMenuContent align="start" className="min-w-48">
 				<DropdownMenuItem
 					render={<Link href="/menu">{tMenu("pageTitle")}</Link>}
 				/>
@@ -75,7 +75,7 @@ function MenuDropdown() {
 export function SiteHeader() {
 	const t = useTranslations("Landing.nav");
 	return (
-		<header className="sticky top-0 z-40 border-b border-border/40 bg-background/70 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+		<header className="sticky top-0 z-40 border-b border-border/40 bg-background/70 backdrop-blur supports-backdrop-filter:bg-background/60">
 			<div className="flex items-center justify-between px-6 py-4 md:px-16 md:py-6">
 				<Logo />
 				<nav className="hidden items-center gap-6 text-base md:flex">

@@ -16,49 +16,6 @@
     "siteName": "Shisha Town Bratislava",
     "ogLocale": "sk_SK"
   },
-  "Menu": {
-    "pageTitle": "Cenník",
-    "pageSubtitle": "Vyber si shishu, niečo pod zub a poriadny drink.",
-    "categories": {
-      "shisha": {
-        "title": "Vodné fajky",
-        "items": {
-          "house": { "name": "Domáci mix", "description": "Naša signature kombinácia" },
-          "premium": { "name": "Prémiový tabak", "description": "Top značky, vyladený setup" },
-          "experimental": { "name": "Experiment", "description": "Limitky a špeciálne mixy" },
-          "coalChange": { "name": "Výmena uhlíkov", "description": "Predĺženie sedenia" }
-        }
-      },
-      "coldDrinks": {
-        "title": "Studené nápoje",
-        "items": {
-          "water": { "name": "Voda 0,5 l" },
-          "cola": { "name": "Coca-Cola 0,33 l" },
-          "fanta": { "name": "Fanta 0,33 l" },
-          "redBull": { "name": "Red Bull 0,25 l" },
-          "juice": { "name": "Džús 0,3 l" }
-        }
-      },
-      "hotDrinks": {
-        "title": "Horúce nápoje",
-        "items": {
-          "espresso": { "name": "Espresso" },
-          "cappuccino": { "name": "Cappuccino" },
-          "tea": { "name": "Čaj" },
-          "hotChocolate": { "name": "Horúca čokoláda" }
-        }
-      },
-      "snacks": {
-        "title": "Niečo pod zub",
-        "items": {
-          "chips": { "name": "Čipsy" },
-          "nuts": { "name": "Oriešky" },
-          "olives": { "name": "Olivy" }
-        }
-      }
-    },
-    "currency": "EUR"
-  },
   "Landing": {
     "nav": {
       "about": "O nás",
@@ -90,7 +47,12 @@
         "house": {
           "title": "Domáce mixy",
           "description": "Naše vlastné kombinácie, ktoré inde nedostaneš.",
-          "list": ["Mystery Flow", "Dark Mind", "Silent Smoke", "After Hours"]
+          "list": [
+            "Mystery Flow",
+            "Dark Mind",
+            "Silent Smoke",
+            "After Hours"
+          ]
         },
         "premium": {
           "title": "Prémiové sedenie",
@@ -105,7 +67,12 @@
         "experimental": {
           "title": "Experimentálne",
           "description": "Limitky a špeciálne mixy. Opýtaj sa na obľúbené.",
-          "list": ["Unknown Batch", "Off Menu", "Staff Only", "Secret Mix"]
+          "list": [
+            "Unknown Batch",
+            "Off Menu",
+            "Staff Only",
+            "Secret Mix"
+          ]
         }
       },
       "features": {
@@ -134,6 +101,445 @@
       "phone": "+421 948 455 534",
       "email": "info@shishatown.sk",
       "rights": "© 2026 Shisha Town. Všetky práva vyhradené."
+    }
+  },
+  "Menu": {
+    "pageTitle": "Cenník",
+    "pageSubtitle": "Vyber si shishu, niečo pod zub a poriadny drink.",
+    "currency": "EUR",
+    "categories": {
+      "shisha": {
+        "title": "Vodné fajky",
+        "subcategories": {
+          "tiers": {
+            "title": "Typy shíš"
+          },
+          "addons": {
+            "title": "Doplnky"
+          }
+        },
+        "items": {
+          "standard": {
+            "name": "Standard",
+            "description": "Svetlý tabak · KALOUD korunka"
+          },
+          "exclusive": {
+            "name": "Exclusive",
+            "description": "Tmavý tabak · KALOUD alebo N.A.R. korunka"
+          },
+          "iceInVase": {
+            "name": "Ľad do vázy",
+            "description": "Neškrabe v hrdle, vyššia teplota"
+          },
+          "dyeInVase": {
+            "name": "Farbivo do vázy"
+          },
+          "fruitInVase": {
+            "name": "Čerstvé ovocie do vázy"
+          }
+        }
+      },
+      "alcohol": {
+        "title": "Alkohol",
+        "subcategories": {
+          "shots": {
+            "title": "Alko Shoty (0.04L)"
+          },
+          "cocktails": {
+            "title": "Alko Drinky (0.2L)"
+          },
+          "prosecco": {
+            "title": "Prosecco & Šampanské"
+          },
+          "beer": {
+            "title": "Pivo"
+          },
+          "wine": {
+            "title": "Víno (0.1L)"
+          }
+        },
+        "items": {
+          "russianStandardGold": {
+            "name": "Russian Standard GOLD"
+          },
+          "jackDaniels": {
+            "name": "Jack Daniel's"
+          },
+          "jackDanielsSingleBarrel": {
+            "name": "Jack Daniel's Single Barrel 45%"
+          },
+          "beefeater": {
+            "name": "Beefeater"
+          },
+          "diplomatico": {
+            "name": "Diplomático Reserva Exclusiva 12 y.o."
+          },
+          "jagermeister": {
+            "name": "Jägermeister"
+          },
+          "hennessyVS": {
+            "name": "Hennessy V.S."
+          },
+          "olmecaPlata": {
+            "name": "Olmeca Altos Plata Silver 38%"
+          },
+          "olmecaReposado": {
+            "name": "Olmeca Altos Reposado Gold 38%"
+          },
+          "havanaClub": {
+            "name": "Havana Club 3y White"
+          },
+          "baileys": {
+            "name": "Baileys"
+          },
+          "martiniBianco": {
+            "name": "Martini Bianco"
+          },
+          "ginTonic": {
+            "name": "Gin Tonic"
+          },
+          "cubaLibre": {
+            "name": "Cuba Libre"
+          },
+          "mojito": {
+            "name": "Mojito"
+          },
+          "strawberryMojito": {
+            "name": "Strawberry Mojito"
+          },
+          "luxuryMojito": {
+            "name": "Luxury Mojito"
+          },
+          "tequilaSunrise": {
+            "name": "Tequila Sunrise"
+          },
+          "aperolSpritz": {
+            "name": "Aperol Spritz"
+          },
+          "elderflowerSpritz": {
+            "name": "Baza Spritz"
+          },
+          "mimosa": {
+            "name": "Mimosa"
+          },
+          "russianStandardRedBull": {
+            "name": "Russian Standard GOLD + Red Bull"
+          },
+          "proseccoDOC": {
+            "name": "Prosecco DOC Frizzante (0.20L)"
+          },
+          "laurentPerrier": {
+            "name": "Laurent Perrier La Cuvée Brut (0.75L)"
+          },
+          "pilsnerUrquell": {
+            "name": "Pilsner Urquell 12% (0.3L / 0.5L)"
+          },
+          "wywar": {
+            "name": "Wywar 10% Jozef II. (0.4L)"
+          },
+          "radlerNonAlcoholic": {
+            "name": "Radler NEALKO (0.4L)"
+          },
+          "wine": {
+            "name": "Víno podľa ponuky",
+            "description": "Informujte sa u obsluhy"
+          },
+          "mulledWine": {
+            "name": "Varené víno",
+            "description": "Iba v zimnom období"
+          }
+        }
+      },
+      "snacks": {
+        "title": "Niečo pod zub",
+        "subcategories": {
+          "food": {
+            "title": "Jedlo"
+          },
+          "desserts": {
+            "title": "Dezerty"
+          }
+        },
+        "items": {
+          "panini": {
+            "name": "Domáce Panini 170g",
+            "description": "Maslo, slaninka, mozzarella, parmezán, rukola, sladká chilli omáčka"
+          },
+          "popcorn": {
+            "name": "Pukance 80g"
+          },
+          "nachos": {
+            "name": "Nachos 80g",
+            "description": "So sladkou chilli omáčkou"
+          },
+          "cheeseSauce": {
+            "name": "Syrová omáčka"
+          },
+          "peanutPuffs": {
+            "name": "Arašidové Chrumky 60g"
+          },
+          "saltedSticks": {
+            "name": "Solené Tyčinky 45g"
+          },
+          "hotChocolate": {
+            "name": "Horúca čokoláda",
+            "description": "Pravá belgická"
+          },
+          "granko": {
+            "name": "GRANKO",
+            "description": "Teplé alebo studené"
+          }
+        }
+      },
+      "lemonades": {
+        "title": "Nápoje",
+        "subcategories": {
+          "homemade": {
+            "title": "Domáce Limonády (0.5L / 1.0L)"
+          },
+          "bottled": {
+            "title": "Flaškové Nealko"
+          },
+          "draft": {
+            "title": "Čapované Nealko"
+          }
+        },
+        "items": {
+          "lemonade": {
+            "name": "Citronáda"
+          },
+          "elderflowerLemon": {
+            "name": "Baza s citrónom"
+          },
+          "blackcurrantLemon": {
+            "name": "Čierna ríbezľa s citrónom"
+          },
+          "raspberryLemon": {
+            "name": "Malina s citrónom"
+          },
+          "cherryLemon": {
+            "name": "Višňa s citrónom"
+          },
+          "grapefruitLemon": {
+            "name": "Grapefruit s citrónom"
+          },
+          "strawberryLemon": {
+            "name": "Jahoda s citrónom"
+          },
+          "kiwiLemon": {
+            "name": "Kiwi s citrónom"
+          },
+          "mangoLemon": {
+            "name": "Mango s citrónom"
+          },
+          "mojitoStyle": {
+            "name": "Mojitová"
+          },
+          "cocaCola": {
+            "name": "Coca-Cola (0.33L)"
+          },
+          "cocaColaZero": {
+            "name": "Coca-Cola Zero (0.33L)"
+          },
+          "romerquelle": {
+            "name": "Römerquelle sýtená (0.33L)"
+          },
+          "orangeJuice": {
+            "name": "Džús pomaranč 100% (0.25L)"
+          },
+          "kinleyTonic": {
+            "name": "Kinley Tonic Water (0.25L)"
+          },
+          "kinleyBitterRose": {
+            "name": "Kinley Bitter Rose (0.25L)"
+          },
+          "kinleyGingerAle": {
+            "name": "Kinley Ginger Ale (0.25L)"
+          },
+          "redBull": {
+            "name": "Red Bull (0.33L)"
+          },
+          "kofola": {
+            "name": "Kofola (0.3L / 0.5L)"
+          },
+          "sodaWater": {
+            "name": "Sóda / Voda (0.5L / 1.0L)"
+          }
+        }
+      },
+      "tea": {
+        "title": "Čaje",
+        "subcategories": {
+          "black": {
+            "title": "Čierny čaj"
+          },
+          "green": {
+            "title": "Zelený čaj"
+          },
+          "fruit": {
+            "title": "Ovocný čaj"
+          },
+          "fresh": {
+            "title": "Čerstvý čaj"
+          },
+          "mate": {
+            "title": "Maté"
+          },
+          "white": {
+            "title": "Biely čaj"
+          },
+          "herbal": {
+            "title": "Bylinný čaj"
+          },
+          "rooibos": {
+            "title": "Rooibos"
+          },
+          "rooibosMilk": {
+            "title": "Rooibos s mliekom"
+          },
+          "extras": {
+            "title": "Doplnky do čaju"
+          }
+        },
+        "items": {
+          "touaregBlack": {
+            "name": "Touareg Black"
+          },
+          "rize": {
+            "name": "Rize"
+          },
+          "touareg": {
+            "name": "Touareg"
+          },
+          "chinaJasmin": {
+            "name": "China Jasmin"
+          },
+          "diamondTea": {
+            "name": "Diamantový čaj"
+          },
+          "appleCinnamon": {
+            "name": "Jablko-Škorica"
+          },
+          "strawberriesChampagne": {
+            "name": "Jahody v šampanskom"
+          },
+          "kamasutra": {
+            "name": "Kamasutra"
+          },
+          "freshGingerTea": {
+            "name": "Čaj z čerstvého zázvoru"
+          },
+          "freshMintTea": {
+            "name": "Čaj z čerstvej mäty"
+          },
+          "mateGreen": {
+            "name": "Maté Green"
+          },
+          "mateIQ": {
+            "name": "Maté IQ"
+          },
+          "paiMuTan": {
+            "name": "Pai Mu Tan"
+          },
+          "hibiscus": {
+            "name": "Karkade Ibištek"
+          },
+          "chamomile": {
+            "name": "Kamilkový čaj"
+          },
+          "teaOfPharaohs": {
+            "name": "Čaj Faraónov"
+          },
+          "tantra": {
+            "name": "Tantra"
+          },
+          "hercules": {
+            "name": "Herkules"
+          },
+          "kingOfMonkeys": {
+            "name": "Kráľ Opíc s mliekom"
+          },
+          "littleYeti": {
+            "name": "Malý Yetti s mliekom"
+          },
+          "tantraMilk": {
+            "name": "Tantra s mliekom"
+          },
+          "honey": {
+            "name": "Med do čaju"
+          },
+          "ginger": {
+            "name": "Zázvor do čaju"
+          },
+          "lactoseFreeMilk": {
+            "name": "Bezlaktózové mlieko (0.5L)"
+          }
+        }
+      },
+      "coffee": {
+        "title": "Káva",
+        "subcategories": {
+          "hot": {
+            "title": "Horúca káva"
+          },
+          "iced": {
+            "title": "Ľadová káva"
+          },
+          "extras": {
+            "title": "Doplnky"
+          }
+        },
+        "items": {
+          "espresso": {
+            "name": "Espresso"
+          },
+          "espressoDoppio": {
+            "name": "Espresso doppio"
+          },
+          "cappuccino": {
+            "name": "Cappuccino"
+          },
+          "cappuccinoCaramel": {
+            "name": "Cappuccino karamelové"
+          },
+          "cappuccinoChocolate": {
+            "name": "Cappuccino čokoládové"
+          },
+          "latteMacchiato": {
+            "name": "Latte Macchiato"
+          },
+          "latteMacchiatoCaramel": {
+            "name": "Latte Macchiato karamelové"
+          },
+          "latteMacchiatoChocolate": {
+            "name": "Latte Macchiato čokoládové"
+          },
+          "icedCoffee": {
+            "name": "Ľadová káva"
+          },
+          "icedCappuccino": {
+            "name": "Ľadové Cappuccino"
+          },
+          "espressoTonic": {
+            "name": "Espresso Tonic"
+          },
+          "raspberryEspressoTonic": {
+            "name": "Raspberry Espresso Tonic"
+          },
+          "honey": {
+            "name": "Med"
+          },
+          "maresiMilk": {
+            "name": "Mlieko Maresi"
+          },
+          "topping": {
+            "name": "Topping"
+          },
+          "whippedCream": {
+            "name": "Šľahačka"
+          }
+        }
+      }
     }
   }
 }

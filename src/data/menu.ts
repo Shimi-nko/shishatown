@@ -1,3 +1,6 @@
+// GENERATED from menu/menu.csv — do not edit by hand.
+// Regenerate with: bun scripts/import-menu.ts
+
 export type MenuItemPrice = number | { s: number; l: number };
 
 export type MenuItem = {
@@ -25,16 +28,16 @@ export const menu: MenuCategory[] = [
 			{
 				id: "tiers",
 				items: [
-					{ id: "standard", price: 11.0 },
+					{ id: "standard", price: 11 },
 					{ id: "exclusive", price: 14.9 },
 				],
 			},
 			{
 				id: "addons",
 				items: [
-					{ id: "iceInVase", price: 1.0, addon: true },
+					{ id: "iceInVase", price: 1, addon: true },
 					{ id: "dyeInVase", price: 1.5, addon: true },
-					{ id: "fruitInVase", price: 2.0, addon: true },
+					{ id: "fruitInVase", price: 2, addon: true },
 				],
 			},
 		],
@@ -79,7 +82,7 @@ export const menu: MenuCategory[] = [
 				id: "prosecco",
 				items: [
 					{ id: "proseccoDOC", price: 4.5 },
-					{ id: "laurentPerrier", price: 99.0 },
+					{ id: "laurentPerrier", price: 99 },
 				],
 			},
 			{
@@ -93,7 +96,7 @@ export const menu: MenuCategory[] = [
 			{
 				id: "wine",
 				items: [
-					{ id: "wine", price: 2.0 },
+					{ id: "wine", price: 2 },
 					{ id: "mulledWine", price: 3.9 },
 				],
 			},
@@ -109,7 +112,7 @@ export const menu: MenuCategory[] = [
 					{ id: "panini", price: 3.9 },
 					{ id: "popcorn", price: 2.1 },
 					{ id: "nachos", price: 2.1 },
-					{ id: "cheeseSauce", price: 1.0, addon: true },
+					{ id: "cheeseSauce", price: 1, addon: true },
 					{ id: "peanutPuffs", price: 1.9 },
 					{ id: "saltedSticks", price: 1.9 },
 				],
@@ -152,7 +155,7 @@ export const menu: MenuCategory[] = [
 					{ id: "kinleyTonic", price: 2.3 },
 					{ id: "kinleyBitterRose", price: 2.3 },
 					{ id: "kinleyGingerAle", price: 2.3 },
-					{ id: "redBull", price: 3.0 },
+					{ id: "redBull", price: 3 },
 				],
 			},
 			{
@@ -227,15 +230,15 @@ export const menu: MenuCategory[] = [
 			{
 				id: "rooibosMilk",
 				items: [
-					{ id: "kingOfMonkeys", price: { s: 3.0, l: 4.9 } },
-					{ id: "littleYeti", price: { s: 3.0, l: 4.9 } },
-					{ id: "tantraMilk", price: { s: 3.0, l: 4.9 } },
+					{ id: "kingOfMonkeys", price: { s: 3, l: 4.9 } },
+					{ id: "littleYeti", price: { s: 3, l: 4.9 } },
+					{ id: "tantraMilk", price: { s: 3, l: 4.9 } },
 				],
 			},
 			{
 				id: "extras",
 				items: [
-					{ id: "honey", price: { s: 0.5, l: 1.0 }, addon: true },
+					{ id: "honey", price: { s: 0.5, l: 1 }, addon: true },
 					{ id: "ginger", price: { s: 0.7, l: 1.4 }, addon: true },
 					{ id: "lactoseFreeMilk", price: 0.5, addon: true },
 				],

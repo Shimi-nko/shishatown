@@ -30,7 +30,7 @@ lemonades,homemade,lemonade,,2.20,3.30,,
 ```
 
 - `price` XOR (`price_s` + `price_l`): fixed price or size-variant price.
-- `addon`: any non-empty value → `addon: true`.
+- `addon`: any non-empty value → `addon: true`. Multiple addons per group are just multiple rows. Addons are scoped to their **subcategory** (rendered as indented "+" rows under that group), not linked to a specific item — when an addon applies to only one item (e.g. honey/milk/lemon for tea), give that item its own subcategory and put the addon rows there.
 - `note`: ignored by the script. Free-text hint column for the owner (e.g. the name of a new item so the developer can pick a proper camelCase `item_id` and write translations).
 - Category slugs (`shisha` → `tobacco`, etc.) live in a config map inside the script, not in the CSV. The owner never touches slugs.
 

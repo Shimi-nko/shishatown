@@ -452,8 +452,11 @@ for (const locale of LOCALES) {
 // --- write the generated module ---
 const outPath = path.join(ROOT, "src", "data", "menu.ts");
 await Bun.write(outPath, generateMenuTs(newMenu));
+Bun.spawnSync(["bunx", "biome", "format", "--write", outPath]);
 console.log(`wrote ${outPath}`);
 ```
+
+(The `biome format` pass normalizes emission drift — e.g. single-item arrays biome wants inline — so regeneration never fights `bun run check`.)
 
 - [ ] **Step 2: Add package.json script**
 

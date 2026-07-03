@@ -56,6 +56,20 @@ test("short row without trailing columns does not set addon", () => {
 	expect(csvToMenu(csv)[0].subcategories[0].items[0].addon).toBeUndefined();
 });
 
+test("reordered columns parse identically (header-keyed)", () => {
+	const csv =
+		"item_id,addon,price,category,note,subcategory,price_s,price_l\nhoney,x,0.50,tea,hint for dev,extras,,\n";
+	expect(csvToMenu(csv)).toEqual([
+		{
+			id: "tea",
+			slug: "tea",
+			subcategories: [
+				{ id: "extras", items: [{ id: "honey", price: 0.5, addon: true }] },
+			],
+		},
+	]);
+});
+
 test("unknown category id falls back to id as slug", () => {
 	const csv = `${CSV_HEADER}\nmocktails,classics,virginMojito,4.50,,,,\n`;
 	expect(csvToMenu(csv)[0].slug).toBe("mocktails");
@@ -82,13 +96,15 @@ test("generateMenuTs emits a complete typed module", () => {
 	);
 });
 
-test("generateMenuTs output roundtrips through menuToCsv", () => {
-	// The generated source for the current menu must contain every item line.
+test("generateMenuTs emits every category, subcategory, and item", () => {
 	const source = generateMenuTs(menu);
 	for (const category of menu) {
 		expect(source).toContain(`slug: "${category.slug}",`);
 		for (const subcategory of category.subcategories) {
 			expect(source).toContain(`id: "${subcategory.id}",`);
+			for (const item of subcategory.items) {
+				expect(source).toContain(`{ id: "${item.id}", price: `);
+			}
 		}
 	}
 });

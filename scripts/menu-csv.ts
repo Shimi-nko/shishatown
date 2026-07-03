@@ -60,7 +60,7 @@ type CsvRow = {
 export function csvToMenu(csv: string): MenuCategory[] {
 	const parsed = Papa.parse<CsvRow>(csv, {
 		header: true,
-		skipEmptyLines: true,
+		skipEmptyLines: "greedy",
 		transformHeader: (header) => header.trim(),
 		transform: (value) => value.trim(),
 	});

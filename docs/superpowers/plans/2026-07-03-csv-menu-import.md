@@ -15,7 +15,7 @@
 - Repo uses tabs + double quotes (biome). Generated code must match.
 - CSV columns: `category,subcategory,item_id,price,price_s,price_l,addon,note`. `note` is ignored by the parser (cells beyond index 6 are never read, so a comma inside a quoted note cannot shift the parsed columns).
 - No validation/hard failures by design — the site is tested before deploy. The import script only prints an informational report.
-- `tsconfig.json` `include` covers `**/*.ts`; scripts use the `Bun` global which `tsc` doesn't know → Task 1 excludes `scripts/` from tsconfig. Bun itself typechecks the scripts when running them.
+- `tsconfig.json` `include` covers `**/*.ts`; scripts use the `Bun` global which `tsc` doesn't know → Task 1 excludes `scripts/` from tsconfig. Note: bun strips types without checking them — the `bun test scripts/` suite is what actually exercises the scripts; `tsc --noEmit` only covers the app (including the generated `src/data/menu.ts`).
 
 ---
 

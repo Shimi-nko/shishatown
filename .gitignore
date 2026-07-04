@@ -40,3 +40,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# source menu PDFs — too large for git (GitHub 100MB limit)
+menu/*.pdf

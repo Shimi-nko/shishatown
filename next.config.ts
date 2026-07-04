@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
 	output: "standalone",
 	reactStrictMode: true,
 	poweredByHeader: false,
-	allowedDevOrigins: ["192.168.102.91", "192.168.8.4"],
+	allowedDevOrigins: ["192.168.102.91", "192.168.8.4","192.168.102.171"],
 	experimental: {
 		optimizePackageImports: ["lucide-react", "@base-ui/react"],
 	},

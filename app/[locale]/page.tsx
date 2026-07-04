@@ -128,8 +128,9 @@ function Services() {
 			id="menu"
 			className="flex flex-col gap-12 px-6 py-8 md:px-16 md:py-12"
 		>
-			<header className="flex flex-col items-start gap-4 md:flex-row md:items-center">
-				<h2 className="rounded-lg bg-brand-accent px-4 py-2 text-3xl font-medium text-brand-accent-foreground md:text-4xl">
+			<header className="flex flex-col items-start gap-3">
+				<span className="h-0.5 w-8 rounded-full bg-brand-accent" aria-hidden />
+				<h2 className="text-3xl font-medium tracking-tight md:text-4xl">
 					{t("title")}
 				</h2>
 				<p className="max-w-xl text-base text-foreground/80">{t("subtitle")}</p>
@@ -187,10 +188,10 @@ function ServiceCard({
 
 	return (
 		<Card
-			className={`rounded-2xl border-2 border-foreground p-5 shadow-[0_4px_0_0_var(--color-foreground)] ${
+			className={`rounded-2xl border p-5 shadow-sm transition-shadow hover:shadow-md ${
 				isAccent
-					? "bg-brand-accent text-brand-accent-foreground"
-					: "bg-card text-card-foreground"
+					? "border-brand-accent/40 bg-brand-accent text-brand-accent-foreground"
+					: "border-border bg-card text-card-foreground"
 			}`}
 		>
 			<CardHeader className="p-0">

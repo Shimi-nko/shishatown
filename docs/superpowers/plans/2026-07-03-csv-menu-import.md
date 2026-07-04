@@ -26,7 +26,7 @@
 - Test: `scripts/menu-csv.test.ts`
 - Modify: `tsconfig.json` (exclude `scripts/`)
 
-- [ ] **Step 1: Exclude scripts from tsconfig**
+- [x] **Step 1: Exclude scripts from tsconfig**
 
 In `tsconfig.json`, change:
 
@@ -40,7 +40,7 @@ to:
   "exclude": ["node_modules", "scripts"]
 ```
 
-- [ ] **Step 2: Write the failing tests**
+- [x] **Step 2: Write the failing tests**
 
 Create `scripts/menu-csv.test.ts`:
 
@@ -101,12 +101,12 @@ test("known category ids map to their slugs", () => {
 });
 ```
 
-- [ ] **Step 3: Run tests to verify they fail**
+- [x] **Step 3: Run tests to verify they fail**
 
 Run: `bun test scripts/menu-csv.test.ts`
 Expected: FAIL — `Cannot find module './menu-csv'` (or similar resolution error).
 
-- [ ] **Step 4: Write the implementation**
+- [x] **Step 4: Write the implementation**
 
 Create `scripts/menu-csv.ts`:
 
@@ -182,12 +182,12 @@ export function csvToMenu(csv: string): MenuCategory[] {
 }
 ```
 
-- [ ] **Step 5: Run tests to verify they pass**
+- [x] **Step 5: Run tests to verify they pass**
 
 Run: `bun test scripts/menu-csv.test.ts`
 Expected: 7 pass, 0 fail.
 
-- [ ] **Step 6: Commit**
+- [x] **Step 6: Commit**
 
 ```bash
 git add scripts/menu-csv.ts scripts/menu-csv.test.ts tsconfig.json
@@ -202,7 +202,7 @@ git commit -m "feat: add menu CSV parse/serialize module"
 - Modify: `scripts/menu-csv.ts` (append function)
 - Test: `scripts/menu-csv.test.ts` (append tests)
 
-- [ ] **Step 1: Write the failing tests**
+- [x] **Step 1: Write the failing tests**
 
 Append to `scripts/menu-csv.test.ts` (add `generateMenuTs` to the existing import from `./menu-csv`):
 
@@ -229,12 +229,12 @@ test("generateMenuTs output roundtrips through menuToCsv", () => {
 });
 ```
 
-- [ ] **Step 2: Run tests to verify they fail**
+- [x] **Step 2: Run tests to verify they fail**
 
 Run: `bun test scripts/menu-csv.test.ts`
 Expected: FAIL — `generateMenuTs` is not exported.
 
-- [ ] **Step 3: Write the implementation**
+- [x] **Step 3: Write the implementation**
 
 Append to `scripts/menu-csv.ts`:
 
@@ -300,12 +300,12 @@ export function generateMenuTs(menu: MenuCategory[]): string {
 }
 ```
 
-- [ ] **Step 4: Run tests to verify they pass**
+- [x] **Step 4: Run tests to verify they pass**
 
 Run: `bun test scripts/menu-csv.test.ts`
 Expected: 9 pass, 0 fail.
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
 
 ```bash
 git add scripts/menu-csv.ts scripts/menu-csv.test.ts
@@ -321,7 +321,7 @@ git commit -m "feat: add menu.ts source generator"
 - Create (generated): `menu/menu.csv`
 - Modify: `package.json` (add script)
 
-- [ ] **Step 1: Write the export script**
+- [x] **Step 1: Write the export script**
 
 Create `scripts/export-menu-csv.ts`:
 
@@ -337,7 +337,7 @@ await Bun.write(outPath, menuToCsv(menu));
 console.log(`wrote ${outPath}`);
 ```
 
-- [ ] **Step 2: Add package.json script**
+- [x] **Step 2: Add package.json script**
 
 In `package.json` `"scripts"`, add:
 
@@ -345,7 +345,7 @@ In `package.json` `"scripts"`, add:
     "menu:export": "bun scripts/export-menu-csv.ts",
 ```
 
-- [ ] **Step 3: Run it and eyeball the output**
+- [x] **Step 3: Run it and eyeball the output**
 
 Run: `bun run menu:export`
 Expected: `wrote .../menu/menu.csv`
@@ -364,7 +364,7 @@ shisha,addons,dyeInVase,1.50,,,x,
 Also check the row count matches the item count:
 `tail -n +2 menu/menu.csv | wc -l` should equal `grep -cE 'price: ([0-9]|\{)' src/data/menu.ts` (plain `grep -c 'price:'` over-counts by one — it also matches the `price: MenuItemPrice;` type field).
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
 
 ```bash
 git add scripts/export-menu-csv.ts menu/menu.csv package.json
@@ -379,7 +379,7 @@ git commit -m "feat: add menu CSV export script and seed menu.csv"
 - Create: `scripts/import-menu.ts`
 - Modify: `package.json` (add script)
 
-- [ ] **Step 1: Write the import script**
+- [x] **Step 1: Write the import script**
 
 Create `scripts/import-menu.ts`:
 
@@ -458,7 +458,7 @@ console.log(`wrote ${outPath}`);
 
 (The `biome format` pass normalizes emission drift — e.g. single-item arrays biome wants inline — so regeneration never fights `bun run check`.)
 
-- [ ] **Step 2: Add package.json script**
+- [x] **Step 2: Add package.json script**
 
 In `package.json` `"scripts"`, add:
 
@@ -466,7 +466,7 @@ In `package.json` `"scripts"`, add:
     "menu:import": "bun scripts/import-menu.ts",
 ```
 
-- [ ] **Step 3: Roundtrip run — import the seed CSV over the current menu.ts**
+- [x] **Step 3: Roundtrip run — import the seed CSV over the current menu.ts**
 
 Run: `bun run menu:import`
 Expected output: no `+ added` / `- removed` / `~ price` lines (data identical), no `! missing translations` lines (all current items are translated), then `wrote .../src/data/menu.ts`.
@@ -474,7 +474,7 @@ Expected output: no `+ added` / `- removed` / `~ price` lines (data identical), 
 Run: `git diff --stat src/data/menu.ts`
 Expected: only cosmetic changes (generated header comment; number literals like `11.0` → `11`). No item/price/structure differences — verify by skimming `git diff src/data/menu.ts`.
 
-- [ ] **Step 4: Verify the regenerated file typechecks and tests still pass**
+- [x] **Step 4: Verify the regenerated file typechecks and tests still pass**
 
 Run: `bun test scripts/`
 Expected: all pass (roundtrip test now runs against the regenerated file).
@@ -482,12 +482,12 @@ Expected: all pass (roundtrip test now runs against the regenerated file).
 Run: `bunx tsc --noEmit`
 Expected: exit 0.
 
-- [ ] **Step 5: Verify the site builds with the generated file**
+- [x] **Step 5: Verify the site builds with the generated file**
 
 Run: `bun run build`
 Expected: build succeeds. (Per AGENTS.md this Next.js version has breaking changes — if the build fails for reasons unrelated to `src/data/menu.ts`, check `node_modules/next/dist/docs/` before touching app code, and confirm the failure exists on a clean checkout too.)
 
-- [ ] **Step 6: Commit**
+- [x] **Step 6: Commit**
 
 ```bash
 git add scripts/import-menu.ts package.json src/data/menu.ts
@@ -501,7 +501,7 @@ git commit -m "feat: add menu CSV import script, regenerate menu.ts from seed CS
 **Files:**
 - Modify: `README.md` (append section)
 
-- [ ] **Step 1: Append workflow section to README.md**
+- [x] **Step 1: Append workflow section to README.md**
 
 ```markdown
 ## Menu updates (CSV workflow)
@@ -519,7 +519,7 @@ The menu lives in a Google Sheet the owner edits. `src/data/menu.ts` is GENERATE
 Addons are scoped to their subcategory (rendered as "+" rows under the group). Item-specific addons (e.g. honey for tea) live in that item's own subcategory. New categories need a slug mapping in `scripts/menu-csv.ts` (`CATEGORY_SLUGS`), otherwise the slug falls back to the category id.
 ```
 
-- [ ] **Step 2: Commit**
+- [x] **Step 2: Commit**
 
 ```bash
 git add README.md

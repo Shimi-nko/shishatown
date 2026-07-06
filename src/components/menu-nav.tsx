@@ -37,7 +37,7 @@ export function MenuNav({ sections }: MenuNavProps) {
 			className="sticky top-(--header-height) z-20 -mx-6 border-b border-border/60 bg-background/90 backdrop-blur-sm md:-mx-16"
 		>
 			<ScrollArea className="w-full">
-				<div className="flex gap-2 px-6 py-3 md:px-16">
+				<div className="flex w-max min-w-full gap-2 px-6 py-3 md:px-16">
 					{sections.map(({ id, label }) => (
 						<a
 							key={id}

@@ -41,7 +41,48 @@ export default async function Home({ params }: Props) {
 			<Hero />
 			<Hours />
 			<Services />
+			<Contact />
 		</>
+	);
+}
+
+const MAPS_QUERY = encodeURIComponent(
+	"Shisha Town, Mickiewiczova 5, 811 07 Bratislava",
+);
+
+function Contact() {
+	const t = useTranslations("Landing.footer");
+	return (
+		<section
+			id="contact"
+			className="flex scroll-mt-(--header-height) flex-col gap-6 px-6 py-8 md:px-16 md:py-12"
+		>
+			<header className="flex flex-col items-start gap-3">
+				<span className="h-0.5 w-8 rounded-full bg-brand-accent" aria-hidden />
+				<h2 className="text-3xl font-medium tracking-tight md:text-4xl">
+					{t("contactTitle")}
+				</h2>
+				<a
+					href={`https://www.google.com/maps/search/?api=1&query=${MAPS_QUERY}`}
+					target="_blank"
+					rel="noopener noreferrer"
+					className="text-base text-foreground/80 hover:text-foreground hover:underline"
+				>
+					{t("address")}
+				</a>
+			</header>
+			<div className="overflow-hidden rounded-2xl border border-border">
+				<iframe
+					title="Google Maps — Shisha Town"
+					src={`https://www.google.com/maps?q=${MAPS_QUERY}&output=embed&z=17`}
+					className="h-80 w-full md:h-105"
+					style={{ border: 0 }}
+					loading="lazy"
+					allowFullScreen
+					referrerPolicy="no-referrer-when-downgrade"
+				/>
+			</div>
+		</section>
 	);
 }
 

@@ -42,6 +42,14 @@
 	--brand-accent: oklch(0.5 0.115 65);
 	--brand-accent-foreground: oklch(0.98 0.005 85);
 	--brand-ink: oklch(0.14 0.01 60);
+	/* keep in sync with site-header (logo h-10 + py-4 / md:py-6) */
+	--header-height: 72px;
+}
+
+@media (min-width: 768px) {
+	:root {
+		--header-height: 88px;
+	}
 }
 
 @theme inline {

@@ -55,7 +55,10 @@ function CategoryNav() {
 function MenuCategorySection({ category }: { category: MenuCategory }) {
 	const t = useTranslations("Menu");
 	return (
-		<section id={category.id} className="flex flex-col gap-4 scroll-mt-20">
+		<section
+			id={category.id}
+			className="flex flex-col gap-4 scroll-mt-[calc(var(--header-height)+4.5rem)]"
+		>
 			<h2 className="text-xl font-semibold uppercase tracking-wide">
 				{t(`categories.${category.id}.title`)}
 			</h2>

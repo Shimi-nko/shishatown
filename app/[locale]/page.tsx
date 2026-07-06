@@ -58,7 +58,6 @@ function Contact() {
 			className="flex scroll-mt-(--header-height) flex-col gap-6 px-6 py-8 md:px-16 md:py-12"
 		>
 			<header className="flex flex-col items-start gap-3">
-				<span className="h-0.5 w-8 rounded-full bg-brand-accent" aria-hidden />
 				<h2 className="text-3xl font-medium tracking-tight md:text-4xl">
 					{t("contactTitle")}
 				</h2>
@@ -170,7 +169,6 @@ function Services() {
 			className="flex flex-col gap-12 px-6 py-8 md:px-16 md:py-12"
 		>
 			<header className="flex flex-col items-start gap-3">
-				<span className="h-0.5 w-8 rounded-full bg-brand-accent" aria-hidden />
 				<h2 className="text-3xl font-medium tracking-tight md:text-4xl">
 					{t("title")}
 				</h2>

@@ -64,7 +64,6 @@ function CategoryHeader({ category }: { category: MenuCategory }) {
 	const t = useTranslations("Menu");
 	return (
 		<header className="flex flex-col items-start gap-3">
-			<span className="h-0.5 w-8 rounded-full bg-brand-accent" aria-hidden />
 			<h1 className="text-3xl font-medium tracking-tight md:text-5xl">
 				{t(`categories.${category.id}.title`)}
 			</h1>

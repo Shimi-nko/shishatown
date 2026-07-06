@@ -30,7 +30,6 @@ function MenuHeader() {
 	const t = useTranslations("Menu");
 	return (
 		<header className="flex flex-col items-start gap-3">
-			<span className="h-0.5 w-8 rounded-full bg-brand-accent" aria-hidden />
 			<h1 className="text-3xl font-medium tracking-tight md:text-5xl">
 				{t("pageTitle")}
 			</h1>
@@ -76,10 +75,6 @@ function MenuGroupSection({ group }: { group: MenuGroup }) {
 			{rest.map((category) => (
 				<div key={category.id} className="flex flex-col gap-6">
 					<h3 className="flex items-center gap-3 text-base font-semibold uppercase tracking-wide text-foreground/80">
-						<span
-							className="h-0.5 w-5 rounded-full bg-brand-accent"
-							aria-hidden
-						/>
 						{t(`categories.${category.id}.title`)}
 					</h3>
 					<CategorySubsections category={category} />

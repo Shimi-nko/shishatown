@@ -8,7 +8,6 @@ export type MenuGroup = {
 
 export const menuGroups: MenuGroup[] = [
 	{ id: "shisha", categoryIds: ["shisha"] },
-	{ id: "alcohol", categoryIds: ["alcohol"] },
-	{ id: "drinks", categoryIds: ["lemonades", "tea", "coffee"] },
+	{ id: "drinks", categoryIds: ["lemonades", "alcohol", "tea", "coffee"] },
 	{ id: "snacks", categoryIds: ["snacks"] },
 ];
